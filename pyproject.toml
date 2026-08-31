@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "forcessim"
+version = "0.2.0"
+description = "forcesSim -- NFR27's validated suspension force-extraction pipeline: one CSV in (front + rear geometry + vehicle parameters), one CSV out (per-component forces), plus a workbook export with the bump case and envelope"
+requires-python = ">=3.9"
+dependencies = [
+    "numpy>=1.24",
+    "scipy>=1.10",
+    "pyyaml>=6.0",
+    "openpyxl>=3.1",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
